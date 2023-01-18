@@ -1,0 +1,328 @@
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(18, 29, 51);
+  padding: 40px;
+}
+
+header img {
+  width: 40px;
+}
+
+.headerNav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+}
+
+.tituloHeader {
+  padding: 10px;
+  color: white;
+  margin-bottom: 0px;
+}
+
+.nombreCompania{
+  font-size: 40px;
+}
+
+.tituloMain {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+}
+
+p{
+  font-size: 18px;
+  padding: 5px;
+}
+
+.dom {
+  text-decoration: underline;
+}
+
+#paginaDefault{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+#botonHeaderIniciarSesion{
+  display: flex;
+}
+
+#divCerrarSesion{
+  display: none;
+  
+}
+
+.iniciarSesion{
+  display: none;
+  flex-direction: column;
+  padding: 175px;
+}
+
+.divRegistrarse{
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.pure-form{
+  border: 1px solid grey;
+  padding: 20px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(18, 29, 51);
+  padding: 20px;
+}
+footer .itemTextosFooter {
+  color: white;
+  font-size: 20px;
+}
+
+footer .itemRedes img {
+  width: 70px;
+  padding: 5px;
+}
+
+.itemRedes{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+h1 {
+  padding: 30px;
+  margin-top: 20px;
+  margin-bottom: -35px;
+}
+
+h4{
+  text-decoration: underline;
+}
+
+.falsoUsuario{
+  display: none;
+  color: red;
+}
+
+
+/* HTML INDEX */
+#bienvenida {
+  display: none;
+  flex-direction: column;
+}
+
+.textoBienvenida{
+  margin-left: 42px;
+}
+
+.imagenes-bienvenida {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between ;
+  margin-top: -49px;
+  padding: 48px;
+}
+
+.divImgAutoDefault{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+}
+
+.quienesSomos{
+  padding: 30px;
+}
+
+.divImg2Index{
+  display: flex;
+  flex-direction: row;
+  padding: 80px;
+}
+
+
+/* HTML contratar */
+#contratarServicios{
+  display: flex;
+}
+
+.tituloContratar{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.divTextoContratar{
+  padding: 80px;
+  margin-top: 0px;
+}
+
+#botonSimular{
+  margin-bottom: 30px;
+  margin-top: 48px;
+  margin-left: 273px;
+}
+
+#VehiculosJs {
+  padding: 40px;
+}
+
+#titulo-vehiculos {
+  margin-left: 28px;
+  margin-bottom: -14px;
+}
+
+.divImgPersonasDefault{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+.container-vehiculos {
+  display: none;
+  flex-direction: column;
+  border: 3px grey;
+  border-style: outset; 
+  padding: 20px;
+}
+
+#titulo-vehiculos {
+  display: flex;
+  flex-direction: column;
+}
+
+#form-vehiculos {
+  display: flex;
+  flex-direction: row;
+  padding: 40px;
+
+}
+
+#logintVehiculos {
+  display: none;
+  justify-content: center;
+  font-size: 20px;
+  color: red;
+}
+
+#containerCard{
+  display: none;
+}
+
+#tituloPrecios{
+  display: flex;
+}
+
+.containerPreciosVehiculos{
+  display: none;
+  flex-direction: column;
+  margin-left: 101px;
+  padding: 32px;
+}
+
+.container-pagar {
+  display: none;
+  flex-direction: column;
+  border: 1px solid grey;
+  border-style: double;
+  padding: 20px;
+}
+
+#form-pagar {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+#titulo-pagar {
+  margin-left: 19px;
+}
+
+label {
+  padding: 10px;
+}
+
+#logintPagar {
+  display: none;
+  color: red;
+}
+
+/* HTML CONTACTO */
+.divTituloContacto{
+  text-decoration: underline;
+  margin-bottom: 58px;
+}
+
+.textoContacto{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.texto{
+  padding: 30px;
+}
+
+.divContacto{
+  display: flex;
+  padding: 80px;
+}
+
+.formContacto{
+  border: 1px solid;
+  border-color: black;
+  padding: 80px;
+}
+
+/* HTML ESTADO SEGUROS */
+#vehiculosClientes{
+  display: none;
+}
+
+.divTituloMisSeguros{
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  text-decoration: underline;
+  margin-bottom: 110px;
+}
+
+.divImgYtextos{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 40px;
+  border: 1px solid black;
+  width: 1000px;
+}
+
+.vehiculosMisSeguros{
+  width: 300px;
+  height: 300px;
+}
+
+#precioTotalMisSeguros{
+  margin-top: 60px;
+}
