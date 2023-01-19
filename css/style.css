@@ -105,6 +105,10 @@ footer .itemRedes img {
   align-items: center;
 }
 
+#linkInstagram{
+  display: none;
+}
+
 h1 {
   padding: 30px;
   margin-top: 20px;
