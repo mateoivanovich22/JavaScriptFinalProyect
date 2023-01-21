@@ -1,24 +1,19 @@
-/*
-// borrar usuario
-//fetch("https://63bf4b24a177ed68abaebd20.mockapi.io/users/2", {
-  method: "DELETE"
-})
-.then(( res ) => res.json())
-.then(( data ) => console.log(data))
-.catch(() => {
-  console.log("malio sal")
-})*/
-
 // registrarse
 const divRegistrarse = document.querySelector(".divRegistrarse");
 
-const inputEmailRegistrarse = document.querySelector("#inputEmailRegistrarse")
+const inputEmailRegistrarse = document.querySelector("#inputEmailRegistrarse");
 
-const inputContraRegistrarse = document.querySelector("#inputContraRegistrarse");
+const inputContraRegistrarse = document.querySelector(
+  "#inputContraRegistrarse"
+);
 
-const inputNombreRegistrarse = document.querySelector("#inputNombreRegistrarse");
+const inputNombreRegistrarse = document.querySelector(
+  "#inputNombreRegistrarse"
+);
 
-const inputApellidoRegistrarse = document.querySelector("#inputApellidoRegistrarse"); 
+const inputApellidoRegistrarse = document.querySelector(
+  "#inputApellidoRegistrarse"
+);
 
 const formRegistrarse = document.querySelector("#formRegistrarse");
 
@@ -63,7 +58,9 @@ const bienvenida = document.querySelector("#bienvenida");
 
 const tituloPrecios = document.querySelector("#tituloPrecios");
 
-const containerPreciosVehiculos = document.querySelector(".containerPreciosVehiculos");
+const containerPreciosVehiculos = document.querySelector(
+  ".containerPreciosVehiculos"
+);
 
 // boton y container pagina default
 
@@ -94,17 +91,17 @@ let vehiculoAsociado = [
 ];
 
 botonRegistrarse.onclick = () => {
-  divCerrarSesion.style.display = "flex"
-  iniciarSesion.style.display = "none"
-  subirAlLs("usuario", inputEmailRegistrarse.value)
-  subirAlLs("contrasena", inputContraRegistrarse.value)
-  divRegistrarse.style.display = "none"
-}
+  divCerrarSesion.style.display = "flex";
+  iniciarSesion.style.display = "none";
+  subirAlLs("usuario", inputEmailRegistrarse.value);
+  subirAlLs("contrasena", inputContraRegistrarse.value);
+  divRegistrarse.style.display = "none";
+};
 
 botonSimular.onclick = () => {
-  containerVehiculos.style.display = 'flex';
-  esconderDivBoton.style.display = 'none';
-}
+  containerVehiculos.style.display = "flex";
+  esconderDivBoton.style.display = "none";
+};
 
 const subirVehiculosAlLs = () => {
   subirAlLs("autos", inputAutos.value);
@@ -122,9 +119,7 @@ const escribirEnHtml = () => {
   }
 
   let texto = `El abono mensual que tenes que abonar es de: ${precioMensualVehiculos}$
-  Cantidad de ${vehiculoAsociado[0].tipo}: ${
-    vehiculoAsociado[0].cantidad
-  } a ${
+  Cantidad de ${vehiculoAsociado[0].tipo}: ${vehiculoAsociado[0].cantidad} a ${
     vehiculoAsociado[0].precio * vehiculoAsociado[0].cantidad
   }$\nCantidad de ${vehiculoAsociado[1].tipo}: ${
     vehiculoAsociado[1].cantidad
@@ -140,7 +135,9 @@ const escribirEnHtml = () => {
 formVehiculos.onsubmit = (event) => {
   event.preventDefault();
   if (
-    inputAutos.value != "" && inputMotos.value != "" && inputBicicletas.value != ""
+    inputAutos.value != "" &&
+    inputMotos.value != "" &&
+    inputBicicletas.value != ""
   ) {
     subirVehiculosAlLs();
     vehiculoAsociado[0].cantidad = parseInt(obtenerDelLs("bicicletas"));
@@ -168,7 +165,7 @@ botonAsociarse.onclick = () => {
   containerCard.style.display = "none";
   containerPreciosVehiculos.style.display = "none";
   contenedorPagar.style.display = "flex";
-}
+};
 
 console.log(vehiculoAsociado);
 
@@ -201,38 +198,45 @@ formPago.onsubmit = (event) => {
   swal({
     title: "Pago aceptado!",
     text: "Pronto le estara llegando un mail con su recibo, a continuacion debe crear una cuenta.",
-    icon:"success",
-    button: "Aceptar"
-  })
-  divRegistrarse.style.display = "flex"
-
+    icon: "success",
+    button: "Aceptar",
+  });
+  divRegistrarse.style.display = "flex";
 };
 
-const contratarServicios = document.querySelector("#contratarServicios")
+const contratarServicios = document.querySelector("#contratarServicios");
 
 formRegistrarse.onsubmit = (e) => {
-  e.preventDefault()
+  e.preventDefault();
 
   fetch("https://63bf4b24a177ed68abaebd20.mockapi.io/users", {
-  method: "POST",
-  body: JSON.stringify({
-  apellido: inputApellidoRegistrarse.value,
-  contrasena: inputContraRegistrarse.value,
-  name: inputNombreRegistrarse.value,
-  email: inputEmailRegistrarse.value,
-  autos: vehiculoAsociado[2].cantidad,
-  motos: vehiculoAsociado[1].cantidad,
-  bicis: vehiculoAsociado[0].cantidad,
-  precioMensual: (vehiculoAsociado[2].cantidad * vehiculoAsociado[2].precio) + (vehiculoAsociado[1].cantidad + vehiculoAsociado[1].precio) + (vehiculoAsociado[0].cantidad + vehiculoAsociado[0].precio),
-  tarjeta: tarjetaIngresada
-  }),
-  headers: {
-  "Content-Type":"application/json"
-  }
+    method: "POST",
+    body: JSON.stringify({
+      apellido: inputApellidoRegistrarse.value,
+      contrasena: inputContraRegistrarse.value,
+      name: inputNombreRegistrarse.value,
+      email: inputEmailRegistrarse.value,
+      autos: vehiculoAsociado[2].cantidad,
+      motos: vehiculoAsociado[1].cantidad,
+      bicis: vehiculoAsociado[0].cantidad,
+      precioMensual:
+        vehiculoAsociado[2].cantidad * vehiculoAsociado[2].precio +
+        (vehiculoAsociado[1].cantidad + vehiculoAsociado[1].precio) +
+        (vehiculoAsociado[0].cantidad + vehiculoAsociado[0].precio),
+      tarjeta: tarjetaIngresada,
+    }),
+    headers: {
+      "Content-Type": "application/json",
+    },
   })
-  .then( res => res.json())
-  .then( data => console.log(data))
-  .catch(() => console.log("error"))
+    .then((res) => res.json())
+    .then((data) => console.log(data))
+    .catch(() => console.log("error"));
 
-  botonIniciarSesion.style.display = 'none';
+  botonIniciarSesion.style.display = "none";
+
+  //profe, si ves que no sube el usuario registrado a la api, es por el el setTimeout, el 95% me funciono bien, hago el setTimeout para que se actualice y aparezca la section "Estado Seguro", sin necesidad de tener q cambiar a otra seccion para q aparezca la misma.
+  setTimeout(() => {
+    location.reload();
+  }, 1000);
 };

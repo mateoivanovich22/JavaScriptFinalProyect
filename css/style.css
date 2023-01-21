@@ -30,8 +30,16 @@ header img {
   margin-bottom: 0px;
 }
 
-.nombreCompania{
+.nombreCompania {
   font-size: 40px;
+}
+
+#botonModoOscuro {
+  display: flex;
+}
+
+#botonModoClaro {
+  display: none;
 }
 
 .tituloMain {
@@ -42,7 +50,7 @@ header img {
   padding: 50px;
 }
 
-p{
+p {
   font-size: 18px;
   padding: 5px;
 }
@@ -51,34 +59,33 @@ p{
   text-decoration: underline;
 }
 
-#paginaDefault{
+#paginaDefault {
   display: flex;
   flex-direction: column;
   padding: 10px;
 }
 
-#botonHeaderIniciarSesion{
+#botonHeaderIniciarSesion {
   display: flex;
 }
 
-#divCerrarSesion{
+#divCerrarSesion {
   display: none;
-  
 }
 
-.iniciarSesion{
+.iniciarSesion {
   display: none;
   flex-direction: column;
   padding: 175px;
 }
 
-.divRegistrarse{
+.divRegistrarse {
   display: none;
   align-items: center;
   justify-content: center;
   padding: 20px;
 }
-.pure-form{
+.pure-form {
   border: 1px solid grey;
   padding: 20px;
 }
@@ -99,13 +106,13 @@ footer .itemRedes img {
   padding: 5px;
 }
 
-.itemRedes{
+.itemRedes {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-#linkInstagram{
+#linkInstagram {
   display: none;
 }
 
@@ -115,15 +122,14 @@ h1 {
   margin-bottom: -35px;
 }
 
-h4{
+h4 {
   text-decoration: underline;
 }
 
-.falsoUsuario{
+.falsoUsuario {
   display: none;
   color: red;
 }
-
 
 /* HTML INDEX */
 #bienvenida {
@@ -131,7 +137,7 @@ h4{
   flex-direction: column;
 }
 
-.textoBienvenida{
+.textoBienvenida {
   margin-left: 42px;
 }
 
@@ -139,47 +145,46 @@ h4{
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between ;
+  justify-content: space-between;
   margin-top: -49px;
   padding: 48px;
 }
 
-.divImgAutoDefault{
+.divImgAutoDefault {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 10px;
 }
 
-.quienesSomos{
+.quienesSomos {
   padding: 30px;
 }
 
-.divImg2Index{
+.divImg2Index {
   display: flex;
   flex-direction: row;
   padding: 80px;
 }
 
-
 /* HTML contratar */
-#contratarServicios{
+#contratarServicios {
   display: flex;
 }
 
-.tituloContratar{
+.tituloContratar {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.divTextoContratar{
+.divTextoContratar {
   padding: 80px;
   margin-top: 0px;
 }
 
-#botonSimular{
+#botonSimular {
   margin-bottom: 30px;
   margin-top: 48px;
   margin-left: 273px;
@@ -194,18 +199,17 @@ h4{
   margin-bottom: -14px;
 }
 
-.divImgPersonasDefault{
+.divImgPersonasDefault {
   display: flex;
   flex-direction: row;
   align-items: center;
-
 }
 
 .container-vehiculos {
   display: none;
   flex-direction: column;
-  border: 3px grey;
-  border-style: outset; 
+  border: 5px rgb(18, 29, 51);
+  border-style: solid;
   padding: 20px;
 }
 
@@ -218,7 +222,6 @@ h4{
   display: flex;
   flex-direction: row;
   padding: 40px;
-
 }
 
 #logintVehiculos {
@@ -228,15 +231,15 @@ h4{
   color: red;
 }
 
-#containerCard{
+#containerCard {
   display: none;
 }
 
-#tituloPrecios{
+#tituloPrecios {
   display: flex;
 }
 
-.containerPreciosVehiculos{
+.containerPreciosVehiculos {
   display: none;
   flex-direction: column;
   margin-left: 101px;
@@ -246,15 +249,27 @@ h4{
 .container-pagar {
   display: none;
   flex-direction: column;
-  border: 1px solid grey;
+  border: 1px solid black;
   border-style: double;
   padding: 20px;
+}
+
+#divActualizarPag {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
 }
 
 #form-pagar {
   display: flex;
   flex-direction: column;
   padding: 40px;
+}
+
+.pure-form {
+  border-color: black;
 }
 
 #titulo-pagar {
@@ -271,12 +286,12 @@ label {
 }
 
 /* HTML CONTACTO */
-.divTituloContacto{
+.divTituloContacto {
   text-decoration: underline;
   margin-bottom: 58px;
 }
 
-.textoContacto{
+.textoContacto {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -284,27 +299,27 @@ label {
   padding: 15px;
 }
 
-.texto{
+.texto {
   padding: 30px;
 }
 
-.divContacto{
+.divContacto {
   display: flex;
   padding: 80px;
 }
 
-.formContacto{
+.formContacto {
   border: 1px solid;
   border-color: black;
   padding: 80px;
 }
 
 /* HTML ESTADO SEGUROS */
-#vehiculosClientes{
+#vehiculosClientes {
   display: none;
 }
 
-.divTituloMisSeguros{
+.divTituloMisSeguros {
   display: flex;
   align-items: center;
   padding: 5px;
@@ -312,7 +327,7 @@ label {
   margin-bottom: 110px;
 }
 
-.divImgYtextos{
+.divImgYtextos {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -322,11 +337,33 @@ label {
   width: 1000px;
 }
 
-.vehiculosMisSeguros{
+.vehiculosMisSeguros {
   width: 300px;
   height: 300px;
 }
 
-#precioTotalMisSeguros{
+#precioTotalMisSeguros {
   margin-top: 60px;
+}
+
+.tituloVehiculo {
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+}
+
+#botonMostrarTarjeta {
+  display: flex;
+  justify-content: center;
+}
+
+#mostrarTarjeta {
+  display: none;
+  flex-direction: row;
+  border: 3px solid black;
+}
+
+#botonCerrarTarjeta {
+  display: none;
+  border: 1px solid black;
 }

@@ -1,284 +1,441 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
     <title>Contratar</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="headerNav">
-            <div>
-              <img src="../img/seguros.png" alt="imagen seguro" />
-            </div>
-            <div class="tituloHeader">
-              <p class="nombreCompania">SEGUROS IVANOVICH</p>
-            </div>
-        </div>
-        <nav class="navbar navbar-expand-lg navbar-light header">
-            <a class="nav-link active" href="../index.html">INICIO</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item" id="contratarServicios">
-                        <a style="color:white" class= "nav-link active" aria-current="page" href="./contratar.html">CONTRATAR</a>
-                    </li>
-                    <li class="nav-item">
-                        <a style="color:white" class="nav-link active" href="./contacto.html">CONTACTO</a>
-                    </li>
-                    <li class="nav-item" id="vehiculosClientes">
-                      <a style="color:white" class="nav-link active" href="./estadoSeguros.html">ESTADO SEGUROS</a>
-                    </li>                  
-                </ul>
-            </div>
-        </nav>
+      <div class="headerNav">
         <div>
-          <div id="botonHeaderIniciarSesion">
-            <button type="button" class="btn btn-secondary btn-lg" id="BotonIniciarSesion">Iniciar sesion</button>
-          </div>
-          <div id="divCerrarSesion">
-            <button type="button" class="btn btn-secondary btn-lg" id="botonCerrarSesion">Cerrar sesion</button>
-          </div>
+          <img src="../img/seguros.png" alt="imagen seguro" />
         </div>
+        <div class="tituloHeader">
+          <p class="nombreCompania">SEGUROS IVANOVICH</p>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-light header">
+        <a class="nav-link active" href="../index.html">INICIO</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item" id="contratarServicios">
+              <a
+                style="color: white"
+                class="nav-link active"
+                aria-current="page"
+                href="./contratar.html"
+                >CONTRATAR</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                style="color: white"
+                class="nav-link active"
+                href="./contacto.html"
+                >CONTACTO</a
+              >
+            </li>
+            <li class="nav-item" id="vehiculosClientes">
+              <a
+                style="color: white"
+                class="nav-link active"
+                href="./estadoSeguros.html"
+                >ESTADO SEGUROS</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div>
+        <div id="botonModoOscuro">
+          <button
+            type="button"
+            class="btn btn-secondary btn-lg"
+            id="botonOscuro"
+          >
+            modo oscuro
+          </button>
+        </div>
+        <div id="botonModoClaro">
+          <button
+            type="button"
+            class="btn btn-secondary btn-lg"
+            id="botonClaro"
+          >
+            modo claro
+          </button>
+        </div>
+      </div>
+      <div>
+        <div id="botonHeaderIniciarSesion">
+          <button
+            type="button"
+            class="btn btn-secondary btn-lg"
+            id="BotonIniciarSesion"
+          >
+            Iniciar sesion
+          </button>
+        </div>
+        <div id="divCerrarSesion">
+          <button
+            type="button"
+            class="btn btn-secondary btn-lg"
+            id="botonCerrarSesion"
+          >
+            Cerrar sesion
+          </button>
+        </div>
+      </div>
     </header>
 
     <main>
-        <div class="tituloMain">
-            <div class="tituloContratar">
-                <div>
-                    <h1 style="text-decoration: underline;">¿Desea contratar sus futuros seguros?</h1>
-                </div>
-                <div class="divTextoContratar">
-                    <p>A continuacion le ofrecemos la posibilidad de poder simular sus futuros seguros, para luego evaluar si usted acepta los precios que le ofrecemos. En el caso de que usted desee asegurar sus vehiculos con SegurosIvanovich, podra abonar mensualmente con tarjetas de debito/credito que luego se les mostraran.</p>
-                    <p>En el supuesto caso que usted quiera abonar mediante transferencia bancaria o en efectivo, porfavor comuniquese con nosotros via llamada o mail desde la seccion "Contacto".</p>
-                </div>
-                
+      <div class="tituloMain">
+        <div class="tituloContratar">
+          <div>
+            <h1 style="text-decoration: underline">
+              ¿Desea contratar sus futuros seguros?
+            </h1>
+          </div>
+          <div class="divTextoContratar">
+            <p>
+              A continuacion le ofrecemos la posibilidad de poder simular sus
+              futuros seguros, para luego evaluar si usted acepta los precios
+              que le ofrecemos. En el caso de que usted desee asegurar sus
+              vehiculos con SegurosIvanovich, podra abonar mensualmente con
+              tarjetas de debito/credito que luego se les mostraran.
+            </p>
+            <p>
+              En el supuesto caso que usted quiera abonar mediante transferencia
+              bancaria o en efectivo, porfavor comuniquese con nosotros via
+              llamada o mail desde la seccion "Contacto".
+            </p>
+          </div>
+        </div>
+        <div id="paginaDefault">
+          <div class="divImgPersonasDefault">
+            <div>
+              <img src="../img/personasDefault.png" alt="personas hablando" />
             </div>
-          <div id="paginaDefault">
-            <div class="divImgPersonasDefault">
-              <div>
-                <img src="../img/personasDefault.png" alt="personas hablando">
-              </div>
-              <div class="preguntaSimular">
-                <h3>¿Desea simular los costos de sus futuros seguros?</h3>
-                <button type="button" class="btn btn-outline-primary btn-lg" id="botonSimular">Simular</button>
-              </div>
+            <div class="preguntaSimular">
+              <h3>¿Desea simular los costos de sus futuros seguros?</h3>
+              <button
+                type="button"
+                class="btn btn-outline-primary btn-lg"
+                id="botonSimular"
+              >
+                Simular
+              </button>
             </div>
           </div>
-          <div class="container-vehiculos">
-            <h2 id="titulo-vehiculos">
-              Asigne la cantidad de vehículos que quiere asegurar:
-            </h2>
-            <form id="form-vehiculos">
-              <label>
-                <input type="number" placeholder="AUTOS" id="input-autos" />
-              </label>
-              <label>
-                <input type="number" placeholder="MOTOS" id="input-motos" />
-              </label>
-              <label>
-                <input
-                  type="number"
-                  placeholder="BICICLETAS"
-                  id="input-bicicletas"
-                />
-              </label>
-              <label>
-                <button type="submit" class="btn btn-secondary btn-sm">Asegurar</button>
-              </label>
-            </form>
-            <p id="logintVehiculos">Debes rellenar algún campo.</p>
-          </div>
-          <div class="containerPreciosVehiculos">
-            <div id="tituloPrecios">
-              <h4>Vehiculos y precios:</h4>
-            </div>
-            <div id="cantidadDeVehiculos">
-              
-            </div>
-          </div>
-          <div id="containerCard" class="card" style="width: 18rem;">
-            <img src="../img/seguros.png" class="card-img-top" alt="logo compañia">
-            <div class="card-body">
-              <h5 class="card-title">¿Desea asociarse a nuestra compañia?</h5>
-              <p class="card-text">En caso de que acepte todos nuestros terminos y quiera asegurar sus vehiculos, haga click en el boton de abajo.</p>
-              <button type="button" class="btn btn-primary" id="botonAsociarse">Asociarse</button>
-            </div>
-          </div>
-          
-          <div class="container-pagar">
-            <h2 id="titulo-pagar">Métodos de págo:</h2>
-            <div class=".img-tarjetas">
-              <img
-                id="imgagen-tarjetas"
-                src="../img/tarjetas.webp"
-                alt="tarjetas"
-                width="275px"
-                height="100px"
+        </div>
+        <div class="container-vehiculos">
+          <h2 id="titulo-vehiculos">
+            Asigne la cantidad de vehículos que quiere asegurar:
+          </h2>
+          <form id="form-vehiculos">
+            <label>
+              <input type="number" placeholder="AUTOS" id="input-autos" />
+            </label>
+            <label>
+              <input type="number" placeholder="MOTOS" id="input-motos" />
+            </label>
+            <label>
+              <input
+                type="number"
+                placeholder="BICICLETAS"
+                id="input-bicicletas"
               />
-            </div>
-            <form id="form-pagar">
-              <label>
-                <input type="text" placeholder="Nombre" id="input-nombre" required=""/>
-              </label>
-              <label>
-                <input type="text" placeholder="Apellido" id="input-apellido" required=""/>
-              </label>
-              <label>
-                <input type="number" placeholder="Dni" id="input-dni" required/>
-              </label>
-              <label>
-                <input
-                  type="number"
-                  placeholder="Número de tarjeta"
-                  id="input-tarjeta"
-                  required
-                />
-              </label>
-              <label>
-                <input
-                  type="number"
-                  placeholder="Código de seguridad"
-                  id="input-seguridad"
-                  required
-                />
-              </label>
-              <label>
+            </label>
+            <label>
+              <button type="submit" class="btn btn-secondary btn-sm">
+                Asegurar
+              </button>
+            </label>
+          </form>
+          <p id="logintVehiculos">Debes rellenar algún campo.</p>
+        </div>
+        <div class="containerPreciosVehiculos">
+          <div id="tituloPrecios">
+            <h4>Vehiculos y precios:</h4>
+          </div>
+          <div id="cantidadDeVehiculos"></div>
+        </div>
+        <div id="containerCard" class="card" style="width: 18rem">
+          <img
+            src="../img/seguros.png"
+            class="card-img-top"
+            alt="logo compañia"
+          />
+          <div class="card-body">
+            <h5 class="card-title">¿Desea asociarse a nuestra compañia?</h5>
+            <p class="card-text">
+              En caso de que acepte todos nuestros terminos y quiera asegurar
+              sus vehiculos, haga click en el boton de abajo.
+            </p>
+            <button type="button" class="btn btn-primary" id="botonAsociarse">
+              Asociarse
+            </button>
+          </div>
+        </div>
+
+        <div class="container-pagar">
+          <h2 id="titulo-pagar">Métodos de págo:</h2>
+          <div class=".img-tarjetas">
+            <img
+              id="imgagen-tarjetas"
+              src="../img/tarjetas.webp"
+              alt="tarjetas"
+              width="275px"
+              height="100px"
+            />
+          </div>
+          <form id="form-pagar">
+            <label>
+              <input
+                type="text"
+                placeholder="Nombre"
+                id="input-nombre"
+                required=""
+              />
+            </label>
+            <label>
+              <input
+                type="text"
+                placeholder="Apellido"
+                id="input-apellido"
+                required=""
+              />
+            </label>
+            <label>
+              <input type="number" placeholder="Dni" id="input-dni" required />
+            </label>
+            <label>
+              <input
+                type="number"
+                placeholder="Número de tarjeta"
+                id="input-tarjeta"
+                required
+              />
+            </label>
+            <label>
+              <input
+                type="number"
+                placeholder="Código de seguridad"
+                id="input-seguridad"
+                required
+              />
+            </label>
+            <label>
+              <input
+                type="text"
+                placeholder="Fecha de vencimiento"
+                id="input-vencimiento"
+                required=""
+              />
+            </label>
+            <label>
+              <input type="submit" value="Pagar" />
+            </label>
+            <p id="logintPagar">Algunos datos son incorrectos.</p>
+          </form>
+        </div>
+        <div id="bienvenida">
+          <div class="textoBienvenida">
+            <p>
+              Desde las oficinas de Seguros Ivanovich, te damos la bienvenida y
+              esperamos que estes a gusto con nosotros!
+            </p>
+          </div>
+          <div class="imagenes-bienvenida">
+            <img
+              src="../img/biciSeguro.png"
+              alt="bicicleta seguro"
+              width="200px"
+              height="200px"
+            />
+            <img
+              src="../img/motoSeguro.png"
+              alt="moto seguro"
+              width="200px"
+              height="200px"
+            />
+            <img
+              src="../img/autoSeguro.webp"
+              alt="auto seguro"
+              width="200px"
+              height="200px"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="iniciarSesion">
+        <div>
+          <h4>Iniciar sesion</h4>
+        </div>
+        <form id="formIniciarSesion">
+          <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label"
+              >.Ingrese su mail o usuario</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="inputMailInicioSesion"
+              placeholder="mail o usuario"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="formGroupExampleInput2" class="form-label"
+              >.Ingrese su contraseña</label
+            >
+            <input
+              type="password"
+              class="form-control"
+              id="inputContrasenaInicioSesion"
+              placeholder="contraseña"
+            />
+          </div>
+          <div>
+            <label>
+              <input type="submit" value="ingresar" />
+            </label>
+          </div>
+          <div class="falsoUsuario">
+            <p>Su email o contraseña son incorrectas</p>
+          </div>
+        </form>
+      </div>
+      <div class="divRegistrarse">
+        <form class="pure-form pure-form-stacked" id="formRegistrarse">
+          <fieldset>
+            <legend style="text-decoration: underline">Registrarse</legend>
+            <div class="pure-g">
+              <div class="pure-u-1 pure-u-md-1-3">
+                <label for="multi-first-name">.Nombre</label>
                 <input
                   type="text"
-                  placeholder="Fecha de vencimiento"
-                  id="input-vencimiento"
+                  id="inputNombreRegistrarse"
+                  class="pure-u-23-24"
                   required=""
                 />
-              </label>
-              <label>
-                <input type="submit" value="Pagar" />
-              </label>
-              <p id="logintPagar">Algunos datos son incorrectos.</p>
-            </form>
-          </div>
-          <div id="bienvenida">
-            <div class="textoBienvenida">
-              <p>
-                Desde las oficinas de Seguros Ivanovich, te damos la bienvenida y
-                esperamos que estes a gusto con nosotros!
-              </p>
-            </div>
-            <div class="imagenes-bienvenida">
-              <img
-                src="../img/biciSeguro.png"
-                alt="bicicleta seguro"
-                width="200px"
-                height="200px"
-              />
-              <img
-                src="../img/motoSeguro.png"
-                alt="moto seguro"
-                width="200px"
-                height="200px"
-              />
-              <img
-                src="../img/autoSeguro.webp"
-                alt="auto seguro"
-                width="200px"
-                height="200px"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="iniciarSesion">
-          <div>
-            <h4>Iniciar sesion</h4>
-          </div>
-          <form id="formIniciarSesion">
-            <div class="mb-3">
-              <label for="formGroupExampleInput" class="form-label">.Ingrese su mail o usuario</label>
-              <input type="text" class="form-control" id="inputMailInicioSesion" placeholder="mail o usuario">
               </div>
-            <div class="mb-3">
-              <label for="formGroupExampleInput2" class="form-label">.Ingrese su contraseña</label>
-              <input type="password" class="form-control" id="inputContrasenaInicioSesion" placeholder="contraseña">
+              <div class="pure-u-1 pure-u-md-1-3">
+                <label for="multi-last-name">.Apellido</label>
+                <input
+                  type="text"
+                  id="inputApellidoRegistrarse"
+                  class="pure-u-23-24"
+                  required=""
+                />
+              </div>
+              <div class="pure-u-1 pure-u-md-1-3">
+                <label for="multi-email">.E-Mail</label>
+                <input
+                  type="email"
+                  id="inputEmailRegistrarse"
+                  class="pure-u-23-24"
+                  required=""
+                />
+              </div>
+              <div class="pure-u-1 pure-u-md-1-3">
+                <label for="multi-email">.Contraseña</label>
+                <input
+                  type="password"
+                  id="inputContraRegistrarse"
+                  class="pure-u-23-24"
+                  required=""
+                />
+              </div>
+              <div class="pure-u-1 pure-u-md-1-3">
+                <label for="multi-city">.Pais</label>
+                <input
+                  type="text"
+                  id="multi-city"
+                  class="pure-u-23-24"
+                  value="argentina"
+                  required=""
+                />
+              </div>
+              <div class="pure-u-1 pure-u-md-1-3">
+                <label for="multi-state">.Provincia</label>
+                <select id="multi-state" class="pure-input-1-2">
+                  <option>BUE</option>
+                  <option>CAT</option>
+                  <option>SFE</option>
+                  <option>COR</option>
+                  <option>CHU</option>
+                  <option>NEU</option>
+                </select>
+              </div>
             </div>
-            <div>
-              <label>
-                <input type="submit" value="ingresar" />
-              </label>
-            </div>
-            <div class="falsoUsuario">
-              <p>Su email o contraseña son incorrectas</p>
-            </div>
-          </form>  
-        </div>
-        <div class="divRegistrarse">
-          <form class="pure-form pure-form-stacked" id="formRegistrarse">
-            <fieldset>
-                <legend>Registrarse</legend>
-                <div class="pure-g">
-                    <div class="pure-u-1 pure-u-md-1-3">
-                        <label for="multi-first-name">.Nombre</label>
-                        <input type="text" id="inputNombreRegistrarse" class="pure-u-23-24" required=""/>
-                    </div>
-                    <div class="pure-u-1 pure-u-md-1-3">
-                        <label for="multi-last-name">.Apellido</label>
-                        <input type="text" id="inputApellidoRegistrarse" class="pure-u-23-24" required=""/>
-                    </div>
-                    <div class="pure-u-1 pure-u-md-1-3">
-                        <label for="multi-email">.E-Mail</label>
-                        <input type="email" id="inputEmailRegistrarse" class="pure-u-23-24" required="" />
-                    </div>
-                    <div class="pure-u-1 pure-u-md-1-3">
-                      <label for="multi-email">.Contraseña</label>
-                      <input type="password" id="inputContraRegistrarse" class="pure-u-23-24" required="" />
-                  </div>
-                    <div class="pure-u-1 pure-u-md-1-3">
-                        <label for="multi-city">.Pais</label>
-                        <input type="text" id="multi-city" class="pure-u-23-24" value="argentina" required=""/>
-                    </div>
-                    <div class="pure-u-1 pure-u-md-1-3">
-                        <label for="multi-state">.Provincia</label>
-                        <select id="multi-state" class="pure-input-1-2">
-                            <option>BUE</option>
-                            <option>CAT</option>
-                            <option>SFE</option>
-                            <option>COR</option>
-                            <option>CHU</option>
-                            <option>NEU</option>
-                        </select>
-                    </div>
-                </div>
-                <label for="multi-terms" class="pure-checkbox">
-                    <input type="checkbox" id="multi-terms" /> I&#x27;ve read the terms and conditions
-                </label>
-                <button type="submit" class="pure-button pure-button-primary" id="seRegistro">Registrarse</button>
-            </fieldset>
-          </form> 
-        </div>
-      </main>
+            <label for="multi-terms" class="pure-checkbox">
+              <input type="checkbox" id="multi-terms" /> I&#x27;ve read the
+              terms and conditions
+            </label>
+            <button
+              type="submit"
+              class="pure-button pure-button-primary"
+              id="seRegistro"
+            >
+              Registrarse
+            </button>
+          </fieldset>
+        </form>
+      </div>
+    </main>
 
     <footer>
-        <div class="itemTextosFooter">
-          <p>Tu seguro confiable.</p>
-          <p>Horarios: Lunes a Viernes de 10 a 18 hs. Sábados de 9 a 13 hs.</p>
-          <p>SegurosIvanovich@gmail.com</p>
-          <p>+54 9 11 6548 0369</p>
-        </div>
-  
-        <div class="itemRedes">
-          <a href="https://www.instagram.com/mateoivanovich/"><div><img src="../img/instagram_icon.png"><span id="linkInstagram">------</span></div></a>
-          <img src="../img/twitter_icon.png" alt="icono twitter" />
-          <img src="../img/facebook_icon.png" alt="icono facebook" />
-        </div>
+      <div class="itemTextosFooter">
+        <p>Tu seguro confiable.</p>
+        <p>Horarios: Lunes a Viernes de 10 a 18 hs. Sábados de 9 a 13 hs.</p>
+        <p>SegurosIvanovich@gmail.com</p>
+        <p>+54 9 11 6548 0369</p>
+      </div>
+
+      <div class="itemRedes">
+        <a href="https://www.instagram.com/mateoivanovich/"
+          ><div>
+            <img src="../img/instagram_icon.png" /><span id="linkInstagram"
+              >------</span
+            >
+          </div></a
+        >
+        <img src="../img/twitter_icon.png" alt="icono twitter" />
+        <img src="../img/facebook_icon.png" alt="icono facebook" />
+      </div>
     </footer>
-    
+
     <script src="../scripts/contratar.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> 
-    <script src="../index.js"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../scripts/index.js"></script>
+  </body>
 </html>
