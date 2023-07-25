@@ -1,19 +1,19 @@
 # SegurosIvanovich
 
-En este sitio web, se trabajo con todo tipo de variables, y con funciones vistas a lo largo del curso de coderhouse(JavaScript), se utilizo la API de mockapi con el uso de 2 endopints, users(usuarios) y questions(preguntas).
+https://symphonious-cat-416174.netlify.app/
 
-La web posee 4 sections: "Inicio" , "Contratar" , "Contacto" y "Mis Seguros"
+On this website, we worked with all kinds of variables and functions seen throughout the Coderhouse course (JavaScript). We used the mockapi API with the use of 2 endpoints: users and questions.
 
-Endpoint users: podra crearse un usuario desde la section "Contratar", esta pensado para solo poder crearse una cuenta quien adquiere el servicio, no puede crearse una cuenta si es que no adquirió el servicio.
+The website has 4 sections: "Home," "Hire," "Contact," and "My Insurance."
 
-Endpoint questions: podra hacer la consulta deseada desde la section "Contacto".
+Endpoint users: Users can create an account from the "Hire" section. It is designed so that only those who acquire the service can create an account. If you haven't acquired the service, you won't be able to create an account.
 
-Si usted tiene un usuario, es decir, adquierio el servicio, podra visualizar una section llamada "Estado seguros" donde le mostraremos el estado de sus seguros y donde podra modificar la cantidad de seguros si desea. En el caso de que no sea usuario o no haya iniciado sesion, esta misma section no la podra visualizar.
+Endpoint questions: Users can make inquiries from the "Contact" section.
 
-footerIconInstagram.onclick = () => {
-    console.log(Mi perfil)
-}
+If you have an account, meaning you acquired the service, you can access a section called "Insurance Status" where we will show you the status of your insurance and where you can modify the number of insurances if desired. If you are not a user or have not logged in, you won't be able to access this section.
 
-Espero que te guste!
+footerIconInstagram.onclick = () => { console.log(My profile) }
+
+Hope you like it!
 
 Ivanovich Mateo.
